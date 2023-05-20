@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Juan">
+    
+    <title>
+        
+        乌贼种植基地
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/mago.png">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#FFCC00","avatar":"/images/sanji.jpg","favicon":"/images/mago.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"营业时间：7:00 - 24:00"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":true},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                乌贼种植基地
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation"></span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/sanji.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Juan</span>
+                        
+                            <span class="author-label">摸鱼实习生</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2023-05-20 22:59:42
+    </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>467 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p><code>初始环境：Python 3.6；已配置python环境，已安装PyCharm；cuda驱动nvcuda.dll版本11.3.55</code><br><code>conda虚拟环境：Python 3.8</code><br>需安装：</p>
+<ul>
+<li>Anaconda conda 4.10.1</li>
+<li>PyTorch torch.version 1.12.1</li>
+</ul>
+<p>❗ 但是torch.cuda.is_available()为Flase，运行会报warning <strong>User provided device_type of ‘cuda’, but CUDA is not available</strong>可能是版本不对， 但是不影响使用<br>安装教程：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/Bluebro/article/details/127161165" >https://blog.csdn.net/Bluebro/article/details/127161165<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42257666/article/details/121383450" >https://blog.csdn.net/qq_42257666/article/details/121383450<i class="fas fa-external-link-alt"></i></a><br>（之后的PyTorch以及模型包都在conda虚拟环境下安装）</p>
+<ul>
+<li>Jupyter </li>
+</ul>
+<p>安装教程：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/fakejvruo/article/details/124409158" >https://blog.csdn.net/fakejvruo/article/details/124409158<i class="fas fa-external-link-alt"></i></a><br>使用教程：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/qq_25953411/article/details/128089673" >https://blog.csdn.net/qq_25953411/article/details/128089673<i class="fas fa-external-link-alt"></i></a></p>
+<ul>
+<li>spaCy及模型安装：</li>
+</ul>
+<p>安装教程⭐：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44007213/article/details/113155998" >https://blog.csdn.net/weixin_44007213/article/details/113155998<i class="fas fa-external-link-alt"></i></a><br>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> spacy</span><br><span class="line"></span><br><span class="line"><span class="comment"># s = &quot;患者10月前无明显诱因出现右下腹包块，无发热寒战，无乏力纳差，就诊于某某医院，确诊弥漫大B细胞淋巴瘤10月。&quot;</span></span><br><span class="line">s = <span class="string">&quot;小米董事长叶凡决定投资华为。在2002年，他还创作了&lt;遮天&gt;。&quot;</span></span><br><span class="line">nlp = spacy.load(<span class="string">&quot;zh_core_web_sm&quot;</span>)</span><br><span class="line">doc = nlp(s)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 分句 (sentencizer)</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> doc.sents:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;\n 分句：<span class="subst">&#123;i&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 分词 (Tokenization)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;\n 分词：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>([w.text <span class="keyword">for</span> w <span class="keyword">in</span> doc])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 词性标注 (Part-of-speech tagging)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;\n 词性标注：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>([(w.text, w.tag_) <span class="keyword">for</span> w <span class="keyword">in</span> doc])  <span class="comment"># 细粒度</span></span><br><span class="line"><span class="built_in">print</span>([(w.text, w.pos_) <span class="keyword">for</span> w <span class="keyword">in</span> doc])  <span class="comment"># 粗粒度</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 识别停用词 (Stop words)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;\n 识别停用词：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>([(w.text, w.is_stop) <span class="keyword">for</span> w <span class="keyword">in</span> doc])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. 命名实体识别 (Named Entity Recognization)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;\n 命名实体识别：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>([(e.text, e.label_) <span class="keyword">for</span> e <span class="keyword">in</span> doc.ents])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 6. 依存分析 (Dependency Parsing)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;\n 依存分析：&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>([(w.text, w.dep_) <span class="keyword">for</span> w <span class="keyword">in</span> doc])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下面的只有英文模型有</span></span><br><span class="line"><span class="comment"># 词性还原 (Lemmatization)</span></span><br><span class="line"><span class="comment"># 提取名词短语 (Noun Chunks)</span></span><br><span class="line"><span class="comment"># 指代消解 (Coreference Resolution)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>jieba分词</li>
+<li>pkuseg 医疗领域分词</li>
+</ul>
+<p>安装教程：<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/TFATS/article/details/108851344" >https://blog.csdn.net/TFATS/article/details/108851344<i class="fas fa-external-link-alt"></i></a></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：</li>
+        <li>本文作者：Juan</li>
+        <li>创建时间：2023-05-20 22:59:42</li>
+        <li>
+            本文链接：https://nocccchi.github.io/2023/05/20/环境配置+调研过程/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2023/05/20/Vue3%E7%9A%84%E4%BC%98%E5%8C%96/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2023&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Juan</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+</body>
+</html>

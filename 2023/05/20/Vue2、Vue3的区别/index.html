@@ -9,8 +9,6 @@
     
     <title>
         
-            归档: 2021/11 |
-        
         乌贼种植基地
     </title>
     
@@ -67,7 +65,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 归档
@@ -117,7 +115,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">归档</a>
                 </li>
             
@@ -147,79 +145,123 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation"></span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/sanji.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Juan</span>
+                        
+                            <span class="author-label">摸鱼实习生</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2023-05-20 22:57:26
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/20/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE+%E8%B0%83%E7%A0%94%E8%BF%87%E7%A8%8B/"
-                        ></a>
-                        <span class="article-date">05-20</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/20/Vue3%E7%9A%84%E4%BC%98%E5%8C%96/"
-                        ></a>
-                        <span class="article-date">05-20</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/20/Vue2%E3%80%81Vue3%E7%9A%84%E5%8C%BA%E5%88%AB/"
-                        ></a>
-                        <span class="article-date">05-20</span>
-                    </li>
-                
-            </ul>
-        </section>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/12/26/2022%E3%81%AE%E5%9B%9E%E9%A1%A7-%C3%97-2023%E3%81%AE26%E5%95%8F/"
-                        >2022の回顧 × 2023の26問</a>
-                        <span class="article-date">12-26</span>
-                    </li>
-                
-            </ul>
-        </section>
+
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2021</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2021/11/28/Vue%E5%89%8D%E7%AB%AF%E6%A8%A1%E6%9D%BF%E6%95%B4%E7%90%86/"
-                        >Vue前端模板整理</a>
-                        <span class="article-date">11-28</span>
-                    </li>
-                
-            </ul>
-        </section>
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>620 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>一、vue3新出的一个语法糖<script setup></script><br>相较原写法setup(){}<br>1.可以自动注册子组件<br>2.不需要手动返回模板需要使用的属性和方法<br>3.提供了三个新的API来供我们使用：defineProps、defineEmit和useContext。其中defineProps用来接收父组件传来的值props。defineEmit用来声明触发的事件表。useContext用来获取组件上下文context</p>
+<p>二、生命周期名字大部分需要 + on，功能上类似。<br>setup 是围绕 beforeCreate 和 created 生命周期钩子运行的，所以不需要显式地去定义beforeCreate和created两个生命周期</p>
+<p>三、Vue3 支持了多根节点组件</p>
+<p>四、Vue2 的响应式原理基础是 Object.defineProperty，有以下缺点<br>不能监听数组的变化<br>必须遍历对象的每个属性<br>必须深层遍历嵌套的对象<br>不能监听数组的变化<br>Vue3 响应式原理基础是Proxy，相较于 Object.defineProperty 提供语言全范围的响应能力，消除了局限性，但在兼容性上放弃了IE11及以下。</p>
+<p>五、新的组件<br>1、Fragment<br>在Vue2中: 组件必须有一个根标签<br>在Vue3中: 组件可以没有根标签, 内部会将多个标签包含在一个Fragment虚拟元素中<br>好处: 减少标签层级, 减小内存占用<br>2、Teleport<br>Teleport 是一种能够将我们的组件html结构移动到指定位置的技术。<br>3、Suspense<br>等待异步组件时渲染一些额外内容，让应用有更好的用户体验</p>
+<p>六、性能优化<br>1、编译阶段优化，使得项目运行时候的内存占用少。<br>2、Vue3移除了一些不常用的API，引入<strong>tree-shaking</strong>，可以将无用模块“剪辑”，仅打包需要的，使打包的整体体积变小了。</p>
+<p>七、开发风格变化<br>Vue2中，代码是Options API风格的，也就是通过填充（option）data、methods、computed等属性来完成一个Vue组件，代码分开实现<br>Vue3中，舍弃了Options API，开始使用Composition API。更接近原生JS，组件根据逻辑功能来组织，一个功能所定义的所有代码会放在一起，更加的高内聚，低耦合，更适合代码的复用</p>
+<p>其他变化<br>1、data选项应始终被声明为一个函数<br>2、过渡类名的更改<br>3、移除keyCode作为 v-on 的修饰符，同时也不再支持config.keyCodes<br>4、移除v-on.native修饰符<br>5、移除过滤器（filter）</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：</li>
+        <li>本文作者：Juan</li>
+        <li>创建时间：2023-05-20 22:57:26</li>
+        <li>
+            本文链接：https://nocccchi.github.io/2023/05/20/Vue2、Vue3的区别/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2023/05/20/Vue3%E7%9A%84%E4%BC%98%E5%8C%96/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/12/26/2022%E3%81%AE%E5%9B%9E%E9%A1%A7-%C3%97-2023%E3%81%AE26%E5%95%8F/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">2022の回顧 × 2023の26問</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
+
 
                 
             </div>
@@ -247,6 +289,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -292,6 +351,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+        </aside>
     
 
     <div class="image-viewer-container">
@@ -365,6 +432,14 @@
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
